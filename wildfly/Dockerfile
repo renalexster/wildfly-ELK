@@ -2,7 +2,7 @@ FROM jboss/wildfly:10.1.0.Final
 
 USER root
 
-COPY modules/* /opt/jboss/wildfly/modules/system/layers/base/org/jboss/logmanager-ext/main/
+COPY modules/* /opt/jboss/wildfly/modules/org/jboss/logmanager/ext/main/
 
 COPY standalone.xml /opt/jboss/wildfly/standalone/configuration
 
